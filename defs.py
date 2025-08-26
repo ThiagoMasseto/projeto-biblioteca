@@ -84,7 +84,21 @@ def devolver_livro():
 
 #-------------------------------------------------
 def listar_autor():
-    pass
+    autor_busca = input("Digite o nome do autor que deseja buscar: ").strip()
+
+    encontrados = False
+    for id_livro, livro in dicionario.items():
+        # Compara ignorando maiúsculas/minúsculas
+        if livro.autor.lower() == autor_busca.lower():
+            print(f"ID: {id_livro} | Título: {livro.titulo} | Gênero: {livro.genero}")
+            encontrados = True
+
+    if not encontrados:
+        print(f"Não foram encontrados livros do autor {autor_busca}.")
+
+    os.system("pause")
+    os.system("cls")
+
 #-------------------------------------------------
 def listar_genero():
     while True:
