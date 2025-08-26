@@ -16,6 +16,9 @@ class Livro:
     #-------------------------
     def getGenero(self):
         return self.__genero
+    #-------------------------
+    def getEmprestado(self):
+        return self.emprestado
     #------------------------
     def setTitulo(self,titulo):
         self.__titulo =titulo
