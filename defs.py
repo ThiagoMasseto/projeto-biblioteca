@@ -54,8 +54,8 @@ def emprestar_livro():
     
     if id_livro in dicionario:
         livro = dicionario[id_livro]
-        if not livro.emprestado:  # verifica se já não está emprestado
-            livro.emprestado = True
+        if not livro.getEmprestado():
+            livro.setEmprestado(True)
             print(f'Livro "{livro.getTitulo()}" emprestado com sucesso!')
         else:
             print(f'O livro "{livro.getTitulo()}" já está emprestado.')
