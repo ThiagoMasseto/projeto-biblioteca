@@ -174,12 +174,13 @@ def editar_livro():
         novo_autor = input("Novo autor (pressione Enter para manter): ")
         novo_genero = input("Novo gênero (pressione Enter para manter): ")
 
-        if novo_titulo.strip(): #strip remove espaço em branco
-            livro.getTitulo() = novo_titulo
+        if novo_titulo.strip():
+            livro.setTitulo(novo_titulo)
         if novo_autor.strip():
-            livro.getAutor() = novo_autor
+            livro.setAutor(novo_autor)
         if novo_genero.strip():
-            livro.getGenero() = novo_genero
+            livro.setGenero(novo_genero)
+
 
         print("\nLivro atualizado com sucesso!")
         print(f"Novo cadastro: {livro.getTitulo()} | {livro.getAutor()} | {livro.getGenero()}")
