@@ -14,7 +14,7 @@ while True:
     elif escolha == 3:
         listar_todos()
     elif escolha == 4:
-        pass
+        listar_autor()
     elif escolha == 5:
         listar_genero()
     elif escolha == 6:
