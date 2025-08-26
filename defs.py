@@ -73,9 +73,9 @@ def devolver_livro():
         livro = dicionario[id_livro]
         if livro.emprestado:  # verifica se estava emprestado
             livro.emprestado = False
-            print(f'Livro "{livro.titulo}" devolvido com sucesso!')
+            print(f'Livro "{livro.getTitulo}" devolvido com sucesso!')
         else:
-            print(f'O livro "{livro.titulo}" não estava emprestado.')
+            print(f'O livro "{livro.getTitulo}" não estava emprestado.')
     else:
         print("ID não encontrado!")
 
