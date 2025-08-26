@@ -132,8 +132,8 @@ def listar_genero():
         # Listando livros do gênero escolhido
         encontrados = False
         for id_livro, livro in dicionario.items():
-            if livro.genero == genero_selecionado:
-                print(f"ID: {id_livro} | Título: {livro.titulo} | Autor: {livro.autor}")
+            if livro.getGenero() == genero_selecionado:
+                print(f"ID: {id_livro} | Título: {livro.getTitulo()} | Autor: {livro.getAutor()}")
                 encontrados = True
 
         if not encontrados:
