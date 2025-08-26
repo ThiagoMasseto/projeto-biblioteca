@@ -168,7 +168,7 @@ def editar_livro():
     if id_livroeditado in dicionario:
         livro = dicionario[id_livroeditado]
 
-        print(f"\nLivro atual: {livro.gettitulo} | {livro.autor} | {livro.genero}")
+        print(f"\nLivro atual: {livro.getTitulo()} | {livro.getAutor()} | {livro.getGenero()}")
 
         novo_titulo = input("Novo título (pressione Enter para manter): ")
         novo_autor = input("Novo autor (pressione Enter para manter): ")
@@ -182,7 +182,7 @@ def editar_livro():
             livro.genero = novo_genero
 
         print("\nLivro atualizado com sucesso!")
-        print(f"Novo cadastro: {livro.titulo} | {livro.autor} | {livro.genero}")
+        print(f"Novo cadastro: {livro.getTitulo()} | {livro.getAutor()} | {livro.getGenero()}")
     else:
         print("ID não encontrado!")
 
