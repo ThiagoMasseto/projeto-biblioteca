@@ -71,7 +71,7 @@ def devolver_livro():
     
     if id_livro in dicionario:
         livro = dicionario[id_livro]
-        if livro.emprestado:  # verifica se estava emprestado
+        if livro.getEmprestado():  # verifica se estava emprestado
             livro.emprestado = False
             print(f'Livro "{livro.getTitulo()}" devolvido com sucesso!')
         else:
