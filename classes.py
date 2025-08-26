@@ -6,7 +6,7 @@ class Livro:
         self.__emprestado = False  # já prepara p/ emprestar
 
     def __repr__(self):
-        return f'Livro("{self.titulo}", "{self.autor}", "{self.genero}")'
+        return f'Livro("{self.titulo}", "{self.autor}", "{self.genero}")' #caso utilizado, nao deixa o objeto aparecer feio no terminal
 
     def getTitulo(self):
         return self.__titulo
