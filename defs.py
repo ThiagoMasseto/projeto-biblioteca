@@ -89,8 +89,8 @@ def listar_autor():
     encontrados = False
     for id_livro, livro in dicionario.items():
         # Compara ignorando maiúsculas/minúsculas
-        if livro.autor.lower() == autor_busca.lower():
-            print(f"ID: {id_livro} | Título: {livro.titulo} | Gênero: {livro.genero}")
+        if livro.getAutor().lower() == autor_busca.lower():
+            print(f"ID: {id_livro} | Título: {livro.getTitulo()} | Gênero: {livro.getGenero()}")
             encontrados = True
 
     if not encontrados:
