@@ -73,9 +73,9 @@ def devolver_livro():
         livro = dicionario[id_livro]
         if livro.emprestado:  # verifica se estava emprestado
             livro.emprestado = False
-            print(f'Livro "{livro.getTitulo}" devolvido com sucesso!')
+            print(f'Livro "{livro.getTitulo()}" devolvido com sucesso!')
         else:
-            print(f'O livro "{livro.getTitulo}" não estava emprestado.')
+            print(f'O livro "{livro.getTitulo()}" não estava emprestado.')
     else:
         print("ID não encontrado!")
 
@@ -146,14 +146,14 @@ def listar_genero():
 #-------------------------------------------------
 def listar_todos():
     for id_livro, livro in dicionario.items():
-        print(f"ID: {id_livro} | Título: {livro.getTitulo} | Autor: {livro.getAutor} | Gênero: {livro.getGenero}")
+        print(f"ID: {id_livro} | Título: {livro.getTitulo()} | Autor: {livro.getAutor()} | Gênero: {livro.getGenero()}")
     os.system("pause")
 #-------------------------------------------------
 def listar_emprestado():
     encontrados = False
     for id_livro, livro in dicionario.items():
         if livro.emprestado:
-            print(f"ID: {id_livro} | Título: {livro.getTitulo} | Autor: {livro.getAutor}")
+            print(f"ID: {id_livro} | Título: {livro.getTitulo()} | Autor: {livro.getAutor()}")
             encontrados = True
     if not encontrados:
         print("Nenhum livro está emprestado.")
@@ -168,7 +168,7 @@ def editar_livro():
     if id_livroeditado in dicionario:
         livro = dicionario[id_livroeditado]
 
-        print(f"\nLivro atual: {livro.titulo} | {livro.autor} | {livro.genero}")
+        print(f"\nLivro atual: {livro.gettitulo} | {livro.autor} | {livro.genero}")
 
         novo_titulo = input("Novo título (pressione Enter para manter): ")
         novo_autor = input("Novo autor (pressione Enter para manter): ")
