@@ -152,7 +152,7 @@ def listar_todos():
 def listar_emprestado():
     encontrados = False
     for id_livro, livro in dicionario.items():
-        if livro.emprestado:
+        if livro.getEmprestado():
             print(f"ID: {id_livro} | Título: {livro.getTitulo()} | Autor: {livro.getAutor()}")
             encontrados = True
     if not encontrados:

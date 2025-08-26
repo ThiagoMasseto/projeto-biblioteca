@@ -31,3 +31,6 @@ class Livro:
     def setGenero(self,genero):
         self.__genero=genero
         return self.__genero
+    #-----------------------
+    def setEmprestado(self, status):
+        self._emprestado = status
