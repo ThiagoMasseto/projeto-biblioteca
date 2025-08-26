@@ -34,7 +34,7 @@ def adicionar_livro():
     titulo=input("Nome do livro -->").capitalize()
     autor=input("Autor -->").capitalize()
     genero=input("Genero -->").capitalize()
-    novo_id = max(dicionario.keys()) + 1
+    novo_id = max(dicionario.keys()) + 1 #pega o ultimo id e adiciona 1 para o novo livro
     novo_livro=Livro(titulo, autor, genero)
     dicionario[novo_id]= novo_livro
     print(f"Novo livro adicionado com sucesso! Está localizado na Id {novo_id}")
@@ -174,7 +174,7 @@ def editar_livro():
         novo_autor = input("Novo autor (pressione Enter para manter): ")
         novo_genero = input("Novo gênero (pressione Enter para manter): ")
 
-        if novo_titulo.strip():
+        if novo_titulo.strip(): #strip retira os espaços em branco
             livro.setTitulo(novo_titulo)
         if novo_autor.strip():
             livro.setAutor(novo_autor)
