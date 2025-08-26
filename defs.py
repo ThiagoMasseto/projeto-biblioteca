@@ -31,9 +31,9 @@ dicionario={
 #-------------------------------------------------
 def adicionar_livro():
     print("Para adicionar um livro, preencha as seguintes informações:")
-    titulo=input("Nome do livro -->")
-    autor=input("Autor -->")
-    genero=input("Genero -->")
+    titulo=input("Nome do livro -->").capitalize()
+    autor=input("Autor -->").capitalize()
+    genero=input("Genero -->").capitalize()
     novo_id = max(dicionario.keys()) + 1
     novo_livro=Livro(titulo, autor, genero)
     dicionario[novo_id]= novo_livro
