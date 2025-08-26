@@ -146,7 +146,7 @@ def listar_genero():
 #-------------------------------------------------
 def listar_todos():
     for id_livro, livro in dicionario.items():
-        print(f"ID: {id_livro} | Título: {livro.titulo} | Autor: {livro.autor} | Gênero: {livro.genero}")
+        print(f"ID: {id_livro} | Título: {livro.getTitulo} | Autor: {livro.getAutor} | Gênero: {livro.getGenero}")
     os.system("pause")
 #-------------------------------------------------
 def listar_emprestado():
