@@ -7,7 +7,7 @@ import time
 # Importa todas as funções do arquivo 'defs.py'
 from defs import *
 
-escolha = None
+
 
 os.system("cls")
 
@@ -19,6 +19,8 @@ time.sleep(3)
 
 # O programa só será encerrado quando o usuário escolher a opção de saída (opção 0).
 while True:
+
+    escolha = None
 
     os.system("cls")
 
