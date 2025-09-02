@@ -149,6 +149,7 @@ def listar_todos():
     for id_livro, livro in dicionario.items(): #percorremos o dicionario 
         print(f"ID: {id_livro} | Título: {livro.getTitulo()} | Autor: {livro.getAutor()} | Gênero: {livro.getGenero()}")
     os.system("pause")
+    os.system("cls")
 #-------------------------------------------------
 def listar_emprestado():
     encontrados = False #variavel começa como falsa até achar um livro

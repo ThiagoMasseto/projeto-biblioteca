@@ -9,7 +9,6 @@ from defs import *
 
 # O programa só será encerrado quando o usuário escolher a opção de saída (opção 0).
 while True:
-
     print("Seja bem vindo a biblioteca! Selecione a opção que deseja!\n" \
           "0-Sair\n1-Adicionar livro\n2-Remover livro\n3-Listar todos os livros\n4-Listar livro por autor\n5-listar livro por genero\n6-Listar livros emprestados\n7-Editar detalhes do livro\n8-Emprestar Livro\n9-Devolver Livro")
 
