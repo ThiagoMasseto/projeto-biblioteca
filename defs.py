@@ -145,7 +145,8 @@ def listar_genero():
 
 
 #-------------------------------------------------
-def listar_todos(): 
+def listar_todos():
+    os.system("cls") 
     for id_livro, livro in dicionario.items(): #percorremos o dicionario 
         print(f"ID: {id_livro} | Título: {livro.getTitulo()} | Autor: {livro.getAutor()} | Gênero: {livro.getGenero()}")
     os.system("pause")
