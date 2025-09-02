@@ -47,7 +47,7 @@ while True:
 
     except ValueError:
 
-        print("Você deixou o espaço em branco, tente novamente!!!")
+        print("")
 
 
 
