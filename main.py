@@ -105,3 +105,4 @@ while True:
         print("Numero inválido, tente novamente!")
         # Pausa o programa por 1.5 segundos para que o usuário possa ler a mensagem de erro.
         time.sleep(1.5)
+        os.system("cls")
