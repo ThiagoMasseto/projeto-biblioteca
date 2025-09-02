@@ -26,6 +26,9 @@ while True:
     elif escolha == 9:
         devolver_livro()
     elif escolha == 0:
+        print("Saindo...")
+        time.sleep(1)
+        os.system("cls")
         break
     else:
         print("Numero inválido, tente novamente!")
