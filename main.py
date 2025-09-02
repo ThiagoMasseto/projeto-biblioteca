@@ -7,14 +7,51 @@ import time
 # Importa todas as funções do arquivo 'defs.py'
 from defs import *
 
+escolha = None
+
+os.system("cls")
+
+print(50 * "-")
+print("Sistema Biblioteca do TI".center(50))
+print(50 * "-")
+
+time.sleep(3)
+
 # O programa só será encerrado quando o usuário escolher a opção de saída (opção 0).
 while True:
 
-    print("Seja bem vindo a biblioteca! Selecione a opção que deseja!\n" \
-          "0-Sair\n1-Adicionar livro\n2-Remover livro\n3-Listar todos os livros\n4-Listar livro por autor\n5-listar livro por genero\n6-Listar livros emprestados\n7-Editar detalhes do livro\n8-Emprestar Livro\n9-Devolver Livro")
+    os.system("cls")
 
+    print(50 * "-")
+    print("Sistema Biblioteca do TI".center(50))
+    print(50 * "-")
+
+    
+    print("\nSeja bem vindo a biblioteca! Selecione a opção que deseja!")
+
+    print("1 -> Adcionar Livro")
+    print("2 -> Remover Livro")
+    print("3 -> Listar Todos os Livros")
+    print("4 -> Listar Livros por Autor")
+    print("5 -> Listar Livros por Genero")
+    print("6 -> Listar Livros Emprestados")
+    print("7 -> Editar detalhes do Livro")
+    print("8 -> Editar Livro")
+    print("9 -> Devolver Livro")
+    print("0 -> Sair do Software")
+
+
+    try:
     # Solicita ao usuário que digite um número e o converte para um inteiro
-    escolha = int(input("-->"))
+        escolha = int(input("-->"))
+
+    except ValueError:
+
+        print("Você deixou o espaço em branco, tente novamente!!!")
+
+
+
+
 
     time.sleep(1)
     os.system("cls")
