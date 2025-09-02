@@ -1,7 +1,7 @@
-# importa o módulo 'os' para interagir com o sistema operacional
+# importa o módulo 'os' para interagir com o sistema operacional.
 import os
 
-# Importa o módulo 'time' para pausar a execução do programa
+# Importa o módulo 'time' para pausar a execução do programa.
 import time
 
 # Importa todas as funções do arquivo 'defs.py'
