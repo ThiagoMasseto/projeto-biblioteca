@@ -34,7 +34,7 @@ def adicionar_livro():
     titulo=input("Nome do livro -->").capitalize()
     autor=input("Autor -->").capitalize()
     genero=input("Genero -->").capitalize()
-    novo_id = max(dicionario.keys()) + 1 #pega o ultimo id e adiciona 1 para o novo livro
+    novo_id = max(dicionario.keys()) + 1 #pega o ultimo id e adiciona 1 para o novo livro.
     novo_livro=Livro(titulo, autor, genero) #adiciona uma variavel chamada novo_livro
     dicionario[novo_id]= novo_livro #adiciona dentro do novo id, as informaçoes perticentes a variavel novo_livro.
     print(f"Novo livro adicionado com sucesso! Está localizado na Id {novo_id}")
@@ -145,10 +145,12 @@ def listar_genero():
 
 
 #-------------------------------------------------
-def listar_todos(): 
+def listar_todos():
+    os.system("cls") 
     for id_livro, livro in dicionario.items(): #percorremos o dicionario 
         print(f"ID: {id_livro} | Título: {livro.getTitulo()} | Autor: {livro.getAutor()} | Gênero: {livro.getGenero()}")
     os.system("pause")
+    os.system("cls")
 #-------------------------------------------------
 def listar_emprestado():
     encontrados = False #variavel começa como falsa até achar um livro
